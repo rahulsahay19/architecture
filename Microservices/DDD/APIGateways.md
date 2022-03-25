@@ -97,3 +97,7 @@ Below diagram explains the same.
 # Service Registry Pattern
 
 In this case, microservices register itself with service registry so that other microservice or gateway can discover the service and send the request.
+
+![image](https://user-images.githubusercontent.com/3886381/160130756-75396616-760a-40b5-bc49-de5f4db9651b.png)
+
+Here many instances of differen services are running. Therefore, what gateway will do, it will pick one of the available instances of these services 
