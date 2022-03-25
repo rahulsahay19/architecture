@@ -89,3 +89,36 @@ Sample diagram illustrates the same.
 # Sample example of GRPC communication
 
 ![image](https://user-images.githubusercontent.com/3886381/159738585-aca09ff3-bdec-46a0-912e-5ac4cba7717a.png)
+
+# Asynchronous Message Based Communication
+
+- This is the case where multiple services need to interact with each other.
+- Without any dependency and at the same time it has to be loosely coupled.
+- Message based communication
+- Eventual consistency
+- Message broker systems
+- AMQP Protocol
+- Kafka, RabbitMQ, Azure Service Bus are few examples
+
+## Type of Commuication
+
+![image](https://user-images.githubusercontent.com/3886381/160139910-01986096-887d-4fff-9310-c8a202bf08cb.png)
+
+One to many example. This works on pub/sub model. This is widely used in event based architecture where in there are many subscribers to one publisher, which makes it ideal for the case of 1...N
+
+- Here there is one Event Bus Interface
+- Where in order gets submitted as event
+- Then subscriber picks that up and processes the same
+- In Event-driven architecture, CQRS pattern, event storing, eventual consistency gets applied
+
+![image](https://user-images.githubusercontent.com/3886381/160140351-d076135a-e7c5-4e37-96d3-70881a7c833b.png)
+
+## Dependency Inversion Principle (DIP)
+
+![image](https://user-images.githubusercontent.com/3886381/160142269-8d910361-f39c-410a-bcb9-6ace05599564.png)
+
+This is the general thumb rule which gets applied everywhere.
+
+## Pub/Sub Pattern (Publish-Subscribe)
+
+![image](https://user-images.githubusercontent.com/3886381/160142658-8873d62b-41ea-44f1-a240-237e6efc2e75.png)
